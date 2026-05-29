@@ -1,0 +1,120 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, rgba(61, 84, 61, 0.921), rgb(130, 156, 130), rgb(73, 103, 83)); /*degradado de fondo*/
+    margin: 0; /*quita los bordes blancos por defecto*/
+}
+
+.title_DAD {
+    background: linear-gradient(to right, rgb(30, 39, 34), rgb(14, 18, 17), rgb(15, 17, 16));
+    color: rgb(79, 151, 132);
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.menu_DAD {
+    background: rgb(35, 46, 39);
+    padding: 10px;
+    text-align: center;
+}
+
+.menu_DAD a{
+    color: rgb(22, 239, 148);
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+.Promociones_DAD {
+    text-align: center;
+}
+
+.Productos_DAD{
+    text-align: center;
+}
+
+.Catalogo_DAD {
+    text-align: center;
+}
+
+.Conteiner-Carta_DAD {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    gap: 25px;
+}
+
+.Carta_DAD{
+    background-color: rgb(54, 62, 58);
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgb(30, 30, 30);
+    transition:0.3s; /*efecto del mouse */
+}
+.Carta_DAD:hover {
+    transform: translateY(-15px);/*hace que se muvea al pasar el cursor*/
+}
+
+.Carta_DAD img {
+    width: 100%; /*se ajusta la imagen al bloque*/
+    height: 180px;
+    object-fit: contain; /* Evita que la imagen se deforme */
+    margin-bottom: 15px;
+}
+
+.Carta_DAD h2, h3 {
+    color: #efebeb;
+    font-size: 20px;
+}
+
+.Carta_DAD p {
+    color: rgb(241, 238, 243); 
+    font-size: 20px;/*tamaño de letra*/
+}
+
+.boton-compra_DAD {
+    background-color: rgb(96, 102, 98); 
+    color: rgb(24, 24, 24); 
+    padding: 10px 20px; /*el alto y ancho del boton*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s; 
+    width: 25%; 
+    margin-top: 10px;
+}
+/*hace que cambie el color al pasar el cursor*/
+.boton-compra_DAD:hover {
+    background-color: #d1ffdf;
+}
+
+
+.Mision-Vision_DAD{
+    text-align: center;
+}
+
+.Creadores_DAD{
+    text-align: center;
+    color: black;
+}
+
+.Creadores_DAD img{
+    width: 300px;
+    height: auto;
+}
+
+.Redes_DAD{
+    text-align: center;
+}
+
+footer p{
+    color: black;
+}
+
+/* Media query para moviles*/
+@media screen and (max-width: 768px) {
+    .Conteiner-Carta_DAD {
+        grid-template-columns: 1fr;
+    }
+}
